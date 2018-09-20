@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="simple online tea timer">
+    <meta name="author" content="Janet Mendez">
+    <title>Tea Time Version 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/sass/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navigation">
+            <h2>Tea Time</h2>
+            <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-github"></i></a>
+        </nav>
+        <div class="teatime_wrapper">
+            <div class="teatime_container">
+                <div class="tea_item tea-bl" role="button" tabindex="0" aria-pressed="false" data-time="180">
+                    <i class="fa fa-leaf"></i>
+                    <span class="tea_name">Black</span>
+                    <span class="tea_time">3 min</span>
+                </div>
+                <div class="tea_item tea-gr" role="button" tabindex="0" aria-pressed="false" data-time="120">
+                    <i class="fa fa-leaf"></i>
+                    <span class="tea_name">Green</span>
+                    <span class="tea_time">2 min</span>
+                </div>
+                <div class="tea_item tea-wh" role="button" tabindex="0" aria-pressed="false" data-time="13">
+                    <i class="fa fa-leaf"></i>
+                    <span class="tea_name">White</span>
+                    <span class="tea_time">1 min</span>
+                </div>
+                <div class="tea_item tea-ro" role="button" tabindex="0" aria-pressed="false" data-time="300">
+                    <i class="fa fa-leaf"></i>
+                    <span class="tea_name">Roobios</span>
+                    <span class="tea_time">5 min</span>
+                </div>
+                <div class="tea_item tea-ol" role="button" tabindex="0" aria-pressed="false" data-time="180">
+                    <i class="fa fa-leaf"></i>
+                    <span class="tea_name">Oolong</span>
+                    <span class="tea_time">3 min</span>
+                </div>
+                <div class="tea_item tea-hr" role="button" tabindex="0" aria-pressed="false" data-time="300">
+                    <i class="fa fa-leaf"></i>
+                    <span class="tea_name">Herbal</span>
+                    <span class="tea_time">5 min</span>
+                </div>
+            </div>
+            <div class="teatime_timer">
+                <span class="close" role="button" tabindex="-1" aria-pressed="false"><i class="fa fa-times"></i></i></span>
+                <div class="timer">
+                    <h2>I am being brewed~!</h2>
+                    <p><span class="time-display">00:00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
