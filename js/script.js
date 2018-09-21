@@ -49,4 +49,6 @@ function paddedS(s){
     return s;
 }
 teas.forEach(tea => tea.addEventListener("click", clicked));
+teas.forEach(tea => tea.addEventListener("keypress", clicked));
 timerClose.addEventListener("click", closed);
+timerClose.addEventListener("keypress", closed);

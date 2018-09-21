@@ -1,7 +1,8 @@
 ///Variables
-$backgroundC : #E8F4EA
+$backgroundC : #e2f0e4
 $font: "Poppins", sans-serif
-
+//Imports
+@import "mediaqueries"
 //Basic Layout Styles
 *
     box-sizing: border-box;
@@ -16,7 +17,11 @@ body
 .wrapper
     width: 90%
     margin: 0 auto
+    +tablet
+        width: 95%
+    +phone
+        width: 95%
 
-//Imports
+//Other Styles Imports
 @import "header"
 @import "timer"

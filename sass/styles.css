@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background: #E8F4EA;
+  background: #e2f0e4;
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,10 +22,22 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 860px) and (min-width: 625px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 624px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
 .navigation {
   width: 100%;
   height: auto;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,10 +48,20 @@ body {
 
 .navigation h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: #489665;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+@media (max-width: 624px) {
+  .navigation h2 {
+    font-size: 1.5em;
+  }
 }
 
 .navigation .social-icon {
@@ -56,11 +78,30 @@ body {
   font-size: 1.75em;
 }
 
+@media (max-width: 624px) {
+  .navigation .social-icon i.fa {
+    font-size: 1.5em;
+  }
+}
+
 .teatime_wrapper {
   position: relative;
   width: 90%;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   overflow: hidden;
+}
+
+@media (max-width: 860px) and (min-width: 625px) {
+  .teatime_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 624px) {
+  .teatime_wrapper {
+    margin: 1rem auto 0 auto;
+    width: 100%;
+  }
 }
 
 .teatime_container {
@@ -77,10 +118,10 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: -webkit-transform 2000ms ease;
-  transition: -webkit-transform 2000ms ease;
-  transition: transform 2000ms ease;
-  transition: transform 2000ms ease, -webkit-transform 2000ms ease;
+  -webkit-transition: -webkit-transform 1800ms ease;
+  transition: -webkit-transform 1800ms ease;
+  transition: transform 1800ms ease;
+  transition: transform 1800ms ease, -webkit-transform 1800ms ease;
 }
 
 .teatime_container .tea_item {
@@ -104,9 +145,36 @@ body {
   background: #fdfffd;
 }
 
+@media (max-width: 860px) and (min-width: 625px) {
+  .teatime_container .tea_item {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 624px) {
+  .teatime_container .tea_item {
+    width: 125px;
+    height: 125px;
+    margin: 0.75rem;
+  }
+}
+
 .teatime_container .tea_item i.fa {
   font-size: 3em;
   color: #527d59;
+}
+
+@media (max-width: 860px) and (min-width: 625px) {
+  .teatime_container .tea_item i.fa {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 624px) {
+  .teatime_container .tea_item i.fa {
+    font-size: 1.75em;
+  }
 }
 
 .teatime_container .tea_item .tea_name {
@@ -116,9 +184,33 @@ body {
   color: #151515;
 }
 
+@media (max-width: 860px) and (min-width: 625px) {
+  .teatime_container .tea_item .tea_name {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 624px) {
+  .teatime_container .tea_item .tea_name {
+    font-size: 1.25em;
+  }
+}
+
 .teatime_container .tea_item .tea_time {
   font-size: 1.15em;
   color: #555;
+}
+
+@media (max-width: 860px) and (min-width: 625px) {
+  .teatime_container .tea_item .tea_time {
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 624px) {
+  .teatime_container .tea_item .tea_time {
+    font-size: 1em;
+  }
 }
 
 .teatime_container .tea-bl i.fa {
@@ -151,22 +243,26 @@ body {
   height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 2500ms ease;
-  transition: -webkit-transform 2500ms ease;
-  transition: transform 2500ms ease;
-  transition: transform 2500ms ease, -webkit-transform 2500ms ease;
+  -webkit-transition: -webkit-transform 2000ms ease;
+  transition: -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease;
+  transition: transform 2000ms ease, -webkit-transform 2000ms ease;
 }
 
 .teatime_timer .close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
+  padding: 5px;
   font-size: 1.5em;
+  line-height: 0;
   cursor: pointer;
+  background: #f55555;
 }
 
 .teatime_timer .timer {
   width: 95%;
+  height: 100%;
   margin: 0 auto;
   background: #fdfffd;
   text-align: center;
