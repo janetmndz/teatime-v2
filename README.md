@@ -1,7 +1,7 @@
 # Teatime version 2
 A revamped version of my Teatime project. The original can be found [here](https://github.com/janetmndz/teatime) and an even **earlier** version [here](https://codepen.io/janmez/pen/XJgRRV)
 # Notes
-Teatime was one of the first projects I made when I started learning basic CSS and Javascript. I decided to remake it after a year with a better understanding of Javascript and CSS to see how much I can improve enough.
+Teatime was one of the first projects I made when I started learning the basics of CSS and Javascript. I wanted to remake this now that I have more experience with them
 
 ## **Final Version can be seen here:** [Live Version](https://janetmndz.github.io/teatime-v2/) | [CodePen](https://codepen.io/janmez/full/XxJvwY/)
 
@@ -9,8 +9,7 @@ Teatime was one of the first projects I made when I started learning basic CSS a
 - Vanilla JS
 - Javascript Date Object
 - Sass
-# What Changed & Updated
-Here is a list of why these changes
+# Changes and Updates
 ## **1. CSS => Sass**
 One of the major changes I have made was using Sass to organize and branch out my CSS code.
 
@@ -30,12 +29,12 @@ sass
 @import "header"
 @import "timer"
 ```
-With Sass, it is easier to separate my stylesheets and import them into one single master stylesheet. This is a major improvement from the earlier versions of this project where I just wrote everything in one single style sheet, making it a disorganized mess.
+With Sass, it is easier to separate stylesheets and import them into one single master stylesheet. This is a major improvement from the earlier versions of this project where I just wrote everything in one single style sheet, making it a disorganized mess.
 ## **2. jQuery => vanillaJS**
-Another major change I made was to write the entire interactivity in plain JS to save the time it takes to load and use a framework for such a small project. The first time I made this tea timer I wasn't confident in my Javascript skills so I opted to use a framework. After a year I am more comfortable using vanilla JS and functional programming.
+Another major change I made was to write the entire interactivity in vanilla JS to save the time it takes to load then use a framework for such a small project. The first time I made this tea timer I wasn't confident in my JS skills so I opted to use a framework. After a year I am more comfortable using vanilla JS and functional programming.
 
 
-In my earlier version of the timer feature, I made a separate array in my JS script to hold the tea timer information and had to loop through the HTML `id` names and find a match to the array's `name` key.
+In the earlier version of the timer feature, I made a separate array in my JS to hold the tea time information and had to find a match to the array's `name` key from the HTML `id` tag selected.
 
 **HTML**
 ```html
@@ -101,7 +100,7 @@ function teatime_startup (tea_id) {
     //...
 }
 ```
-While this technically works just fine, it is pretty redundant code. So, in an attempt to lessen the hoops to jump through, in my second version I used a data- attribute in my HTML to make it simpler to run my JS script.
+While this technically works just fine, it is pretty redundant code. So, in an attempt to lessen the hoops to jump through, in my second version I used a `data-` attribute in my HTML to make it simpler to run my JS script.
 
 **HTML**
 ```html
@@ -142,16 +141,14 @@ function clicked(){
 
 teas.forEach(tea => tea.addEventListener("click", clicked));
 ```
-It's obvious how simpler and fewer lines of code this new version uses and how I didn't need to rely on jQuery for this simple aspect.
+As you can see, using this method requires less code and traversing compared to the previous version. I didn't need to rely on jQuery for this simple aspect.
 ## **3. Accessibility Improvements**
 **Version 1**
 ![Lighthouse accessibility grade of 43/100](/images/version1-lighthouse.png)
 **Version 2**
 ![Lighthouse accessibility grade of 100/100](/images/version2-lighthouse.png)
 
-One of the most overlooked mistake I make when I make a project is how I don't pay attention to accessibility features when I should.
-
-It is often something I can simply improve on by just adding a bit more code and fixing the hierarchy of my HTML, making sure my color contrasts is enough and **not** removing the default outline styles.
+Accessibility is an aspect I often overlook when making projects. Some ways I can improve accessibility is fixing the hierarchy of my HTML, making sure my color contrast ratio is enough and **not** removing the default outline styles.
 
 **HTML**
 ```HTML
