@@ -145,9 +145,9 @@ teas.forEach(tea => tea.addEventListener("click", clicked));
 It's obvious how simpler and fewer lines of code this new version uses and how I didn't need to rely on jQuery for this simple aspect.
 ## **3. Accessibility Improvements**
 **Version 1**
-![Lighthouse accessibility grade of 43/100](\images\version1-lighthouse.png)
+![Lighthouse accessibility grade of 43/100](/images/version1-lighthouse.png)
 **Version 2**
-![Lighthouse accessibility grade of 100/100](\images\version2-lighthouse.png)
+![Lighthouse accessibility grade of 100/100](/images/version2-lighthouse.png)
 
 One of the most overlooked mistake I make when I make a project is how I don't pay attention to accessibility features when I should.
 
